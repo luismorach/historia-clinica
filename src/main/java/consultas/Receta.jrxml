@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="919a16a3-9000-4baa-93b7-19301407e88f">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="id" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT ficha_identificacion.nombre,consultas.fecha,
+consultas.t_a,ficha_identificacion.edad,consultas.temperatura,
+consultas.receta FROM ficha_identificacion, consultas WHERE ficha_identificacion.id = consultas.id_paciente AND consultas.id=$P{id}]]>
+	</queryString>
+	<field name="nombre" class="java.lang.String"/>
+	<field name="fecha" class="java.lang.String"/>
+	<field name="t_a" class="java.lang.String"/>
+	<field name="edad" class="java.lang.String"/>
+	<field name="temperatura" class="java.lang.String"/>
+	<field name="receta" class="java.lang.String"/>
+	<title>
+		<band height="224" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="c6ed845b-a63c-4598-9781-68c3d765b877" mode="Transparent" x="103" y="0" width="364" height="21" forecolor="#0070C0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto" size="12" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[INSTITUTO TECNOLÓGICO SUPERIOR DE COALCOMÁN]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="f1f275c0-3c15-42fe-8ad8-8eaaf968de59" x="3" y="0" width="100" height="99"/>
+				<imageExpression><![CDATA["reporte\\img\\logoReceta.gif"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="b3c4621d-5320-41a1-ad6e-f11e7d8c3781" x="477" y="0" width="78" height="100"/>
+				<imageExpression><![CDATA["reporte\\img\\itscReceta.gif"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="c6ed845b-a63c-4598-9781-68c3d765b877" mode="Transparent" x="154" y="35" width="126" height="64" forecolor="#0070C0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto" size="30" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[C l i n y c]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c6ed845b-a63c-4598-9781-68c3d765b877" mode="Transparent" x="453" y="100" width="102" height="21" forecolor="#0070C0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto" size="11" isBold="true" isItalic="true" isUnderline="false" isStrikeThrough="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA["Se sabio, se libre"]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c6ed845b-a63c-4598-9781-68c3d765b877" mode="Transparent" x="48" y="133" width="26" height="21" forecolor="#0070C0"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Roboto" size="14" isBold="true" isItalic="true" isUnderline="false" isStrikeThrough="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Dr.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c6ed845b-a63c-4598-9781-68c3d765b877" mode="Transparent" x="74" y="133" width="430" height="21" forecolor="#0070C0"/>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="Roboto" size="14" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[POLICARPO MORALES TAPIA]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="24427018-5888-4284-9599-719d2fb55080" x="103" y="22" width="364" height="1" forecolor="#0070C0"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement uuid="24427018-5888-4284-9599-719d2fb55080" x="74" y="154" width="430" height="1" forecolor="#0070C0"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement uuid="24427018-5888-4284-9599-719d2fb55080" x="109" y="182" width="395" height="1" forecolor="#0070C0"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement uuid="c6ed845b-a63c-4598-9781-68c3d765b877" mode="Transparent" x="109" y="161" width="395" height="21" forecolor="#0070C0"/>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="Roboto" size="14" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[3692878]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c6ed845b-a63c-4598-9781-68c3d765b877" mode="Transparent" x="48" y="161" width="61" height="21" forecolor="#0070C0"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Roboto" size="14" isBold="true" isItalic="true" isUnderline="false" isStrikeThrough="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Ced Prof.]]></text>
+			</staticText>
+			<line direction="BottomUp">
+				<reportElement uuid="24427018-5888-4284-9599-719d2fb55080" mode="Opaque" x="0" y="199" width="555" height="1" forecolor="#0070C0"/>
+				<graphicElement>
+					<pen lineWidth="7.0" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+			<line direction="BottomUp">
+				<reportElement uuid="24427018-5888-4284-9599-719d2fb55080" mode="Opaque" x="0" y="212" width="555" height="1" forecolor="#0070C0"/>
+				<graphicElement>
+					<pen lineWidth="3.0" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement uuid="c6ed845b-a63c-4598-9781-68c3d765b877" mode="Transparent" x="286" y="35" width="113" height="64" forecolor="#00D0D4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto" size="30" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[I T S C]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="396" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="c6ed845b-a63c-4598-9781-68c3d765b877" mode="Transparent" x="2" y="2" width="64" height="21" forecolor="#0070C0"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Roboto" size="14" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Nombre:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c6ed845b-a63c-4598-9781-68c3d765b877" mode="Transparent" x="391" y="3" width="51" height="21" forecolor="#0070C0"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Roboto" size="14" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Fecha:]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="24427018-5888-4284-9599-719d2fb55080" x="442" y="24" width="110" height="1" forecolor="#0070C0"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement uuid="c6ed845b-a63c-4598-9781-68c3d765b877" mode="Transparent" x="391" y="38" width="23" height="21" forecolor="#0070C0"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Roboto" size="14" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[T:]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="24427018-5888-4284-9599-719d2fb55080" x="414" y="58" width="138" height="1" forecolor="#0070C0"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement uuid="c6ed845b-a63c-4598-9781-68c3d765b877" mode="Transparent" x="3" y="38" width="45" height="21" forecolor="#0070C0"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Roboto" size="14" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[T/A:]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="24427018-5888-4284-9599-719d2fb55080" x="48" y="59" width="194" height="1" forecolor="#0070C0"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement uuid="c6ed845b-a63c-4598-9781-68c3d765b877" mode="Transparent" x="242" y="39" width="50" height="21" forecolor="#0070C0"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Roboto" size="14" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Edad:]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="24427018-5888-4284-9599-719d2fb55080" x="292" y="59" width="99" height="1" forecolor="#0070C0"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement uuid="7bb4b4df-6970-4d8e-a5f8-5d858f958b8e" x="66" y="3" width="325" height="19" forecolor="#0070C0"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Roboto" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="e191d240-c6a0-4790-921e-ea945ac4aed2" x="442" y="3" width="110" height="20" forecolor="#0070C0"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Roboto" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fecha}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ccbd0f87-1202-4f4a-a45f-2dc353f9bfbf" x="48" y="38" width="194" height="20" forecolor="#0070C0"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Roboto" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{t_a}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="5857dd8d-bcfe-49ba-bf16-78816ed7a270" x="292" y="39" width="99" height="20" forecolor="#0070C0"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Roboto" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{edad}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="dcc0c329-333f-4cca-9d32-77f9cbea219c" x="414" y="37" width="138" height="20" forecolor="#0070C0"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Roboto" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{temperatura}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="24427018-5888-4284-9599-719d2fb55080" x="66" y="23" width="325" height="1" forecolor="#0070C0"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</line>
+			<image>
+				<reportElement uuid="8e3b8ab5-92ae-445e-aa48-90bc7c673525" x="122" y="81" width="304" height="300"/>
+				<imageExpression><![CDATA["reporte\\img\\logoRecetaCentro.gif"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement uuid="2774fbac-9fe8-4aaf-baab-3c4d74a2a63e" x="3" y="81" width="549" height="300" forecolor="#0070C0"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Roboto" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{receta}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<pageFooter>
+		<band height="109">
+			<staticText>
+				<reportElement uuid="c6ed845b-a63c-4598-9781-68c3d765b877" mode="Transparent" x="0" y="54" width="555" height="13" forecolor="#0070C0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto" size="10" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Dirección: Av. Tecnológico #371, Col. Emiliano Zapata]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c6ed845b-a63c-4598-9781-68c3d765b877" mode="Transparent" x="0" y="70" width="555" height="13" forecolor="#0070C0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto" size="10" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[C.P. 60840, Coalcomán de Vázquez Pallares, Michoacán]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c6ed845b-a63c-4598-9781-68c3d765b877" mode="Transparent" x="0" y="86" width="555" height="13" forecolor="#0070C0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto" size="10" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Teléfonos: (424) 5330525 y 5330646.]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="24427018-5888-4284-9599-719d2fb55080" x="352" y="1" width="203" height="1" forecolor="#0070C0"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement uuid="c6ed845b-a63c-4598-9781-68c3d765b877" mode="Transparent" x="352" y="0" width="203" height="21" forecolor="#0070C0"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Roboto" size="14" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[FIRMA]]></text>
+			</staticText>
+			<line direction="BottomUp">
+				<reportElement uuid="24427018-5888-4284-9599-719d2fb55080" mode="Opaque" x="2" y="29" width="555" height="1" forecolor="#0070C0"/>
+				<graphicElement>
+					<pen lineWidth="7.0" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+			<line direction="BottomUp">
+				<reportElement uuid="24427018-5888-4284-9599-719d2fb55080" mode="Opaque" x="2" y="42" width="555" height="1" forecolor="#0070C0"/>
+				<graphicElement>
+					<pen lineWidth="3.0" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+		</band>
+	</pageFooter>
+</jasperReport>
